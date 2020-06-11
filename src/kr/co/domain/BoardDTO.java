@@ -18,11 +18,11 @@ public class BoardDTO implements Serializable {
 	private int money;
 	private String category;
 	private String location;
-	private int like;
+	private int likes;
 	private String title_location;
 
 	public BoardDTO(int num, String id, String title, String content, int readcnt, Date writeday, int money,
-			String category, String location, int like) {
+			String category, String location, int likes) {
 		super();
 		this.num = num;
 		this.id = id;
@@ -33,7 +33,7 @@ public class BoardDTO implements Serializable {
 		this.money = money;
 		this.category = category;
 		this.location = location;
-		this.like = like;
+		this.likes = likes;
 		this.title_location = title + "_" + location;
 	}
 
@@ -113,12 +113,12 @@ public class BoardDTO implements Serializable {
 		this.location = location;
 	}
 
-	public int getLike() {
-		return like;
+	public int getLikes() {
+		return likes;
 	}
 
-	public void setLike(int like) {
-		this.like = like;
+	public void setLikes(int likes) {
+		this.likes = likes;
 	}
 
 	public String getTitle_location() {
